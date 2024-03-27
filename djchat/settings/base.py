@@ -154,7 +154,9 @@ MIDDLEWARE = [
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django_htmx.middleware.HtmxMiddleware",  # django-htmx middleware (i.e. request.htmx)
+    "allauth.account.middleware.AccountMiddleware",  # Add this line
 ]
+
 
 # STATIC
 # ------------------------------------------------------------------------------
